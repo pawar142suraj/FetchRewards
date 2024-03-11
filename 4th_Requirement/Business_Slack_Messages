@@ -1,0 +1,44 @@
+•	What questions do you have about the data?
+
+		-   What are the primary objectives or use cases for analyzing the brand, receipt, and user data?
+		-	Are there specific insights or trends you're hoping to uncover from each dataset?
+		-   Do you have any expectations regarding the quality and completeness of the data?
+
+
+•	How did you discover the data quality issues?
+
+		•	Upon initial analysis of the datasets, I've identified several data quality issues:
+		•	In the Brands dataset:
+				- A significant fraction of values are missing for the 'topBrand' and 'categoryCode' columns, potentially affecting analysis involving these attributes.
+				- We observed duplicate rows, indicating redundancy within the dataset.
+		•	In the Receipts dataset:
+				- Substantial missing values exist for fields such as 'finishedDate', 'pointsEarned', 'purchasedItemCount', 'totalSpent', and 'rewardsReceiptItemList'.
+				- The absence of zero values in the 'pointsEarned' field suggests a data capture issue.
+		•	In the Users dataset:
+				- A large number of duplicate records were found.
+				- There are small percentages of missing values in the 'signUpSource' and 'state' columns.
+
+
+•	What do you need to know to resolve the data quality issues?
+
+		•	Clarification on the expected values for missing fields, especially for 'topBrand' and 'categoryCode' in the Brands dataset.
+		•	Understanding the source of missing data in the Receipts dataset, particularly for 'pointsEarned', 'purchasedItemCount', 'totalSpent', and 'rewardsReceiptItemList'.
+		•	Guidance on how to handle duplicate records in the Users dataset.
+
+
+•	What other information would you need to help you optimize the data assets you're trying to create?
+
+		•	Contextual information about the business processes or transactions captured by each dataset.
+		•	Any data validation rules or constraints that should be applied during data preprocessing.
+		•	Definitions of key metrics or KPIs that should be derived from the data.
+
+•	What performance and scaling concerns do you anticipate in production and how do you plan to address them?
+
+		•	As the datasets grow in size, we may encounter performance issues during data processing and analysis.
+		•	It's crucial to implement efficient data loading, transformation, and querying techniques to handle larger volumes of data.
+		•	Considering potential scalability challenges, we should explore options such as parallel processing, distributed computing, or cloud-based solutions to manage increased data volume and complexity effectively.
+
+
+
+
+
